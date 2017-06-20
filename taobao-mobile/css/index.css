@@ -1,0 +1,296 @@
+*{padding: 0;margin: 0;}
+a{text-decoration: none;}
+
+html{height: 100%;}
+body{
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	/*overflow: hidden;*/
+	/*touch-action: none; !!浏览器禁用触摸交互。新版chrome浏览器须加此属性，否则不起作用*/
+}
+/*top按钮*/
+#top_btn{
+	display: none;
+	position: fixed;
+	bottom: 10%;
+	right: 5%;
+	width: 10%;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	text-align: center;
+	padding: 1%;
+	color: #555555;
+	font-weight: 400;
+}
+#top_btn .icon{
+	font-size: 5vw;
+}
+#top_btn p{
+	font-size: 1.5vw;
+}
+/*top按钮结束*/
+/*顶部搜索*/
+#top{
+	background: #FE5400;
+	width: 100%;
+	overflow: hidden;
+	padding: 2% 0;
+	display: flex;
+	align-items: center;/*交叉轴上对齐*/
+}
+/*阿里矢量图标*/
+.icon {
+   width: 1em; 
+   height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+#top > .icon{
+	/*自定义‘淘’字体大小和颜色*/
+   font-size: 5vw;
+   color: white;
+   margin-left: 2%;
+}
+#top .search{
+	width: 87%;
+	display: block;
+	margin-left: 1%;
+	background: #B52600;
+	text-align: center;
+	color: #F0E0DC;
+	text-decoration: none;
+	font-size: 3vw;
+	line-height: 2.6em;
+	border-radius: 5px;
+}
+#top .search .icon{
+	font-size: 4vw;
+}
+/*顶部搜索结束*/
+/*广告轮播区*/
+.swiper-container {
+   width: 100%;
+}
+.swiper-container img{
+	width: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/*广告轮播区结束*/
+/*分类导航区*/
+#list{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+#list > li{
+	width: 20%;
+	list-style: none;
+	margin-top: 3%;
+}
+#list > li img{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+#list > li a{
+	color: rgb(102,102,102);
+	text-align: center;
+	display: block;
+	width: 100%;
+	font-size: 1vw;
+	line-height: 2em;
+}
+/*分类导航区结束*/
+/*淘宝头条*/
+#topic{
+	width: 100%;
+	overflow: hidden;
+	border-top: 1px solid #F7F7F7;
+	border-bottom: 5px solid #EEEEEE;
+	padding: 2% 0;
+	display: flex;
+	align-items: center;
+}
+#topic .left{
+	width: 22%;
+	border-right: 1px solid #F9F9F9;
+	padding-right: 3%;
+	float: left;
+	margin-left: 2%;
+}
+#topic span.center{
+	float: left;
+	border: 1px solid rgb(216,20,33);
+	color: rgb(216,20,33);
+	font-size: 4vw;
+	padding: 2px;
+	margin-left: 2%;
+	border-radius: 5px;
+}
+#topic .right{
+	font-size: 3.7vw;
+	color: rgb(53,53,53);
+	width: 55%;
+	margin-left: 2%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;/*超出文本会用‘...’提示*/
+	line-height: 1.7em;
+}
+/*淘宝头条结束*/
+/*淘抢购*/
+#qianggou{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-bottom: 5px solid #EEEEEE;
+	padding-bottom: 1%;
+}
+#qianggou .tqg-left{
+	width: 40%;
+}
+#qianggou .tqg-left img{
+	width: 100%;
+}
+#qianggou .tqg-right{
+	width: 60%;
+	flex: auto;
+}
+#qianggou .tqg-right img{
+	width: 47%;
+}
+/*淘抢购结束*/
+/*超实惠*/
+#chaoshihui{
+	width: 100%;
+	border-bottom: 5px solid #EEEEEE;
+	/*display: flex;
+	flex-direction: column;*/
+}
+#csh_header{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FF4622;
+}
+#csh_header img{
+	width: 20px;
+	margin: 1%;
+}
+#chaoshihui .csh {
+	width: 100%;
+	display: flex;
+}
+#chaoshihui .csh img[class=first]{
+	width: 40%;
+	height: 40%;
+}
+#chaoshihui .csh img:not(.first){
+	height: 20%;
+	width: 20%;
+}
+/*超实惠结束*/
+/*天猫必逛*/
+#tmbg{
+	width: 100%;
+	border-bottom: 5px solid #EEEEEE;
+}
+#tmbg_h{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FF4622;
+}
+#tmbg_h img{
+	width: 20px;
+	margin: 1%;
+}
+#tbmg_top{
+	width: 100%;
+	display: flex;
+}
+#tbmg_top img{
+	width: 50%;
+	height: 50%;
+}
+#tmbg_down{
+	width: 100%;
+	display: flex;
+}
+#tmbg_down img{
+	width: 25%;
+	height: 100%;
+}
+/*天猫必逛结束*/
+/*底部注册登陆区*/
+#bottom{
+	width: 100%;
+	background: rgb(78,82,94);
+	padding-top: 5%;
+	padding-bottom: 20%;
+}
+#bot_top{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	padding-bottom: 5%;
+}
+#bot_top li{
+	background: rgba(85,89,101,0.5);
+	border: 1px solid #777777;
+	border-radius: 5px;
+	padding: 2%;
+	color: #eee;
+}
+#bot_bottom{
+	color: #eee;
+	text-align: center;
+}
+/*底部注册登陆区结束*/
+/*底部固定导航区*/
+#foot{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	border: 1px solid #ccc;
+	padding: 1%;
+}
+#foot ul{
+	text-align: center;
+	list-style: none;
+	flex: 1;
+}
+#foot .icon{
+	font-size: 7vw;
+}
+#foot li:not(.icon){
+	font-size: 8px;
+	color: #888888;
+}
+/*底部固定导航区*/
